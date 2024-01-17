@@ -43,13 +43,7 @@ class VizualLib:
         transformed_X[object_columns] = ordinal_encoder.fit_transform(transformed_X[object_columns])
 
         self.__data = transformed_X
-
-    # @staticmethod
-    # def vizual_of(old, data, target_column: str = None, transform: bool = None):
-    #     return VizualLib(data,
-    #                      old.__target if target_column is None else target_column,
-    #                      old.__transform if transform is None else transform)
-
+        
     def show_data(self):
         print(self.__data)
         return self.__data
